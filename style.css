@@ -1,0 +1,182 @@
+body{
+    font-family: "VT323", monospace;
+    background-color: #1a0f00;
+    padding: 32px;
+}
+
+.font-theme-pixelated {
+    --main-font: var(--font-pixelated-main);
+    --heading-font: var(--font-pixelated-heading);
+}
+
+.full{
+    display: flex;
+    gap: 40px;
+    max-width: 1000px; /* ЗМЕНШИВ - тепер все компактніше */
+    margin: 0 auto; /* центрує по горизонталі */
+    padding: 0 15px; /* трохи відступів з боків */
+}
+
+.card{
+    flex-shrink: 0;
+    padding: 15px;
+    width: 300px;
+    height: 522px;
+    background-color: #261b0d;
+    border: 1px solid rgba(225,255,255,.1);
+    border-radius: 8px;
+}
+
+.card h1{
+    transform: scaleX(1.5);
+    display: flex;
+    justify-content: center;
+    margin: 0 0 .5rem;
+    font-weight: bold;
+    font-family: "VT323", monospace;
+    font-size: 48px;
+    color: #ffb347;
+    letter-spacing: 1px;
+}
+
+.card p { 
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    color: #b8956a;
+    font-size: 16px;
+}
+
+.card img{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(225,255,255,.1);
+    width: 258px;
+    height: 258px;
+}
+
+#age{
+    padding: 15px;
+    font-family: "VT323", monospace;
+    color:#ffff;
+}
+
+.titel-age{
+    padding: 15px;
+    font-size: 1.25rem;
+    letter-spacing: 0.06rem;
+    color:#b8956a;
+}
+
+.content-age{
+    margin-top: 10px;
+}
+
+.content-text{
+    flex: 1;
+    min-width: 0; 
+}
+
+.content-text h2{
+    margin-top: 0;
+    font-family: "VT323", monospace;
+    color:#b8956a;
+    letter-spacing: 0.125rem;
+    font-size: 2.9rem;
+    margin-bottom: 1rem;
+}
+
+.content-text p{
+    margin-top: -10px;
+    color: #ffffff;
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.text-first{
+    font-size: 2rem;
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.text-second{
+    font-size: 2rem;
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.content-text a {
+    color: #ffb347;
+    text-decoration: none;
+}
+
+.content-text a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    body {
+        padding: 16px;
+    }
+    
+    .full{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        max-width: 100%;
+    }
+    
+    .card {
+        width: 100%;
+        height: auto;
+        width: auto;
+    }
+    
+    .content-text {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .content-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content-text p,
+    .text-first,
+    .text-second {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card h1 {
+        font-size: 40px;
+    }
+    
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.text-go{
+    display: block;
+    font-size: 2rem;
+    margin-left: 400px;
+    color:#ffffff;
+
+}
